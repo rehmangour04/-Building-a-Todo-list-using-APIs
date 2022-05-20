@@ -1,0 +1,45 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Todo</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Todo List App</h1>
+    <div id="container">
+      <input
+        type="text"
+        placeholder="Things to be Done"
+        class="add-task"
+        id="add"
+        data-helloWord="asdasdas"
+      />
+      <span id="total-tasks"
+        >Total tasks: <span id="tasks-counter">0</span></span
+      >
+      <ul id="list">
+        <!--            <li>-->
+        <!--                <input type="checkbox" id="task1" data-id="12" class="custom-checkbox">-->
+        <!--                <label for="task1">Buy Groceries</label>-->
+        <!--                <img src="bin.svg" alt="Delete Task" class="delete" data-id="12" />-->
+        <!--            </li>-->
+      </ul>
+    </div>
+    <script src="todoModule.js"></script>
+    <script type="text/javascript">
+      TodoListApp.initialize(); //Initializing TodoListApp which is available through todoModule.js
+    </script>
+  </body>
+</html>
